@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
     <title>Hello There</title>
 </head>
 <body>
@@ -15,16 +19,19 @@
             <li>Contact</li>
         </nav>
     </header>
-    <section>
+    <section id="home">
         <h2>Home</h2>
-        <p>Hello there! I'm Alex and make websites! I do other stuff too, but this feels like home</p>
-         <ul>
-            <li>I do this for Fun</li>
-            <li>I'll do this for work</li>
-            <li>It'll mean I'll never "work" a day in my life</li>
-         </ul>
+        <div class="flex-home">
+            <img src="img/placeholder.png" alt="Viewtiful Joe Placeholer"/>
+            <ul>
+                <li>I do this for Fun</li>
+                <li>I'll do this for work</li>
+                <li>It'll mean I'll never "work" a day in my life</li>
+            </ul>
+        </div>
+
     </section>
-    <section>
+    <section class="flex-section">
         <h2>Experience</h2>
         <h3>Some take the easy way. I took the fun way. Let's see what we've done so far.</h3>
         <ul>
@@ -46,14 +53,15 @@
             <p>I was provided the opportunity to work as assistant to the Dean and Admin Assistant at UofL. In developing a working relationship with the web coordinator, I was able to work side-by-side with him on small page updates. Upon his transition from the University, I have taken over utilizing the PLONE CMS to maintaining the website, making updates and requested changes, auditing and fixing broken links, building pages, and working with others to diagnose and remedy bigger issues</p>
         </section>
     </section>
-    <section>
+    <section class="flex-section">
         <h2>Interest</h2>
-        <h3>When I'm not coding:</h3>
+<!--        <h3>When I'm not coding:</h3>
         <ul>
             <li>Music</li>
             <li>Sports</li>
             <li>Games</li>
-        </ul>
+        </ul> 
+-->
         <section>
             <!-- Add Image here (icon glyph) -->
             <h4>Music</h4>
@@ -69,7 +77,7 @@
         </section>
 
     </section>
-    <section>
+    <section class="flex-section">
         <h2>Contact</h2>
         <h4>Here's how you can reach me!</h4>
         <ul>

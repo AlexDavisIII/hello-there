@@ -2,7 +2,6 @@ body{
     font-family: 'Oxygen', sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
 ul li{
@@ -24,11 +23,36 @@ header nav{
 .headstyle{
     text-align: center;
 }
+
+.home-container{
+    border: 2px solid #8CD790;
+}
+
 .flex-base{
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
+}
+
+/*   */
+
+/*Background colors for the section*/
+#home{
+    background-color: #d7fff1;
+}
+
+#experience{
+    background-color: #aafcb8;
+}
+
+#interest{
+    background-color: #77af9c;
+}
+
+#contact{
+    background-color: #285943;
+    color: white;
 }
 
 /*CSS for "Home" Section of page*/
@@ -47,6 +71,8 @@ header nav{
     border-radius: 10%;
 }
 
+/*CSS for Flex-Cards*/
+
 .flex-card{
     display: flex;
     flex-direction:  column;
@@ -60,4 +86,6 @@ header nav{
 .flex-card > img{
     max-width: 150px;
 }
+
+
 

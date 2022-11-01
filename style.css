@@ -34,8 +34,8 @@ header nav{
 /*CSS for "Home" Section of page*/
 .flex-home{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-size: 30px;
     margin: 0;

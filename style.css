@@ -8,6 +8,15 @@ ul li{
     list-style: none;
 }
 
+/*Base styling for each section*/
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #8CD790;
+    min-height: 100vh; /*sets viewport equal to 100%, basically setting the minimum height to the size of the display*/
+}
+
 header nav{
     display: flex;
     flex-direction: row;
@@ -24,10 +33,6 @@ header nav{
     text-align: center;
 }
 
-.home-container{
-    border: 2px solid #8CD790;
-}
-
 .flex-base{
     display: flex;
     flex-direction: row;
@@ -35,7 +40,17 @@ header nav{
     width: 100%;
 }
 
-/*   */
+/*  navigation area styling */
+
+.navigation a:link, .navigation a:visited, .navigation a:active{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navigation a:hover{
+    color: #aafcb8;
+}
 
 /*Background colors for the section*/
 #home{
@@ -66,11 +81,6 @@ header nav{
     padding: 0;
 }
 
-.flex-home img {
-    max-width: 150px;
-    border-radius: 10%;
-}
-
 /*CSS for Flex-Cards*/
 
 .flex-card{
@@ -84,8 +94,60 @@ header nav{
 }
 
 .flex-card > img{
-    max-width: 150px;
+
+    max-width: 6rem;
 }
 
+/*MEDIA QUERIES*/
+/*For Bigger Displays (Desktop PCs)*/
+@media screen and (max-width: 1700px) {
+    .flex-home{
+        font-size: 2rem;
+    }
+
+    .flex-home img{
+        max-width: 300px;
+        border-radius: 10%;
+    }
+  }
+  
 
 
+  /*For Tablet and laptop screens*/
+  @media screen and (max-width: 825px) {
+
+    .flex-home{
+        font-size: 1.5rem;
+    }
+
+    .flex-home img{
+        max-width: 200px;
+        border-radius: 10%;
+    }
+  }
+
+
+  @media screen and (max-width: 550px){
+
+    body{
+        font-size: 18px;
+    }
+
+    .flex-home{
+        font-size: 1.5rem;
+    }
+
+  .flex-home img {
+    max-width: 200px;
+    border-radius: 10%;
+    }
+
+    .flex-base{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+  }

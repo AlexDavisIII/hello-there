@@ -43,6 +43,7 @@ header nav{
     background-color: black;
     color:aliceblue;
     min-height: 50px;
+    transition: .1s;
 }
 
 .headstyle{
@@ -87,6 +88,8 @@ header nav{
     background-color: black;
     color:aliceblue;
     min-height: 50px;
+    transition: 1s;
+
 }
 
 

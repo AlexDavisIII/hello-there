@@ -18,6 +18,13 @@
     background: gold;
 }
 
+.navigation button{
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    margin: 1px;
+}
+
 
 .hideMe{
    position: absolute;
@@ -42,7 +49,8 @@ ul li{
     flex-direction: column;
     justify-content: center;
     border: 2px solid #8CD790;
-    min-height: 100vh; /*sets viewport equal to 100%, basically setting the minimum height to the size of the display*/
+    min-height: 600px;
+    /*min-height: 100vh; sets viewport equal to 100%, basically setting the minimum height to the size of the display*/
 }
 
 header nav{
@@ -125,15 +133,30 @@ header nav{
 }
 
 /*CSS for "Home" Section of page*/
+
 .flex-home{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 2rem;
     margin: 0;
     padding: 0;
 }
+
+#home .flex-home{
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+
+
+#home .flex-home p{
+    font-size: 1.5rem;
+    
+}
+
+
 
 /*CSS for Flex-Cards*/
 
@@ -198,7 +221,7 @@ header nav{
     }
 
     .flex-home img{
-        max-width: 200px;
+        max-width: 250px;
         border-radius: 10%;
     }
 
@@ -210,7 +233,7 @@ header nav{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
 
       .menuList li{
@@ -232,7 +255,7 @@ header nav{
     }
 
     .flex-home img{
-        max-width: 300px;
+        max-width: 350px;
         border-radius: 10%;
     }
 

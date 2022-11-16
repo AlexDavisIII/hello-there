@@ -26,6 +26,33 @@
 }
 
 
+.contactButton{
+    width: 150px;
+    height: 65px;
+    border-radius: 5%;
+    background-color: orange;
+    color: white;
+    border: 1px solid white;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+
+.contactButton:hover{
+    background-color: white;
+    border: 1px solid orange;
+    text-decoration: none;
+    color: green;
+    transition: .1s;
+    font-weight: bold;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+
+
+
 .hideMe{
    position: absolute;
    top: 10px;
@@ -218,6 +245,12 @@ footer{
         align-items: center;
         width: 100%;
         padding: 10px;
+    }
+
+
+    #contact .flex-card{
+
+        padding-bottom: 135px;
     }
 
     .menuList{

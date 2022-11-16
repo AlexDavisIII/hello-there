@@ -2,6 +2,8 @@ const menuToggle = document.querySelector('.navigation button');
 const menu = document.querySelector('.navigation ul');
 const navBar= document.querySelector('.navigation');
 /*const menuLine = document.querySelector('.line');*/
+const contactButton = document.querySelector('.contactButton');
+const contactButtonLink=document.querySelector('.contactButton p');
 
 menuToggle.addEventListener('click',function(){
     const open = JSON.parse(menuToggle.getAttribute('aria-expanded'));
@@ -18,6 +20,11 @@ menuToggle.addEventListener('click',function(){
     }
 });
 
+
+
+contactButton.addEventListener('mouseover',function(){
+      contactButtonLink.target.style.color ="green";
+})
 
 
 menuToggle.addEventListener('mouseover',function(){

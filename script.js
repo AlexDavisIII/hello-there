@@ -32,9 +32,14 @@ function buttonDetailToggle(){
     removes the fullscreenNav I made.*/
     if(mediaQuery.matches){
         mainNavigation.classList.remove("fullscreenNav");
+        menuToggle.classList.remove('hideMe');
         menu.toggleAttribute("hidden");
     }
-    
+    /*Added an else if here because the resizing sometimes showed the menu even on phone size. This was made
+    to accommodate that.*/
+    else if(!mediaQuery.matches && !menu.hasAttribute("hidden")){
+        menu.toggleAttribute("hidden");
+    }
 }
 
 mediaQuery.addEventListener('change', buttonDetailToggle);
